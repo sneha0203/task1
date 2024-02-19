@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/p1.css">
+</head>
+<body>
+    <div class="container">
+        <form autocomplete="off" onsubmit="displayText(event)">
+            <label for="comment">Enter Comment here :</label>
+            <input type="text" name="comment" id="comment" placeholder="Enter Comment Here">
+            <input type="submit" value="Submit" id="btn1">
+            <input type="reset" value="Reset" id="btn2" onclick="resetText()">
+            <input type="button" value="Edit" id="btn3" onclick="editText()">
+
+            <p>Text displayed here :</p>
+            <p id="res"></p>
+            <textarea id="res1"></textarea>
+            <button type="button" onclick="newValue()">Set</button>
+        </form>
+       
+    </div>
+    <!-- <div class="container1">
+        
+    </div> -->
+        <output id="output"></output>
+    <script src="./js/p1.js"></script>
+</body>
+</html>
